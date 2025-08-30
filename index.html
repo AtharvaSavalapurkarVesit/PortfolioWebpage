@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atharva Savalapurkar - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Atharva Savalapurkar</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="portfolio.html" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="blog.html" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="theme-toggle">
+                <button id="theme-toggle-btn" class="theme-btn">
+                    <span class="theme-icon">🌙</span>
+                </button>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Hey there! I am Atharva Savalapurkar.</h1>
+            <p class="hero-subtitle">Welcome to my website.</p>
+            <p class="hero-description">Get a glimpse of some of the projects I'm working on and experiences I've had with trying to learn new technology.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>Portfolio</h2>
+            
+            <!-- Recent Projects Section -->
+            <div class="portfolio-subsection">
+                <h3 class="subsection-title">Recent Projects</h3>
+                <div class="content-placeholder">
+                    <p>My projects will appear here as I complete them.</p>
+                </div>
+            </div>
+            
+            <!-- Ongoing Courses Section -->
+            <div class="portfolio-subsection">
+                <h3 class="subsection-title">Ongoing Courses</h3>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <div class="course-image">
+                            <img src="coursePics/java-course.png" alt="Learning JAVA" class="course-img">
+                        </div>
+                        <div class="portfolio-placeholder">
+                            <h3>Learning JAVA</h3>
+                            <p>Mastering Java programming fundamentals and object-oriented concepts</p>
+                            <span class="in-progress">In Progress</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="course-image">
+                            <img src="coursePics/dsa-in-java.jpg" alt="DSA in JAVA" class="course-img">
+                        </div>
+                        <div class="portfolio-placeholder">
+                            <h3>DSA in JAVA</h3>
+                            <p>Data Structures and Algorithms implementation using Java</p>
+                            <span class="in-progress">In Progress</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="course-image">
+                            <img src="coursePics/python-for-ds-ai-dev.png" alt="Python for Data Science, AI & Development" class="course-img">
+                        </div>
+                        <div class="portfolio-placeholder">
+                            <h3>Python for Data Science, AI & Development</h3>
+                            <p>Comprehensive Python programming for data science, AI, and software development</p>
+                            <span class="in-progress">In Progress</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="view-more">
+                    <a href="portfolio.html" class="view-more-btn">View Portfolio Page →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2>Blog & Insights</h2>
+            <div class="content-placeholder">
+                <p>My thoughts and insights will appear here as I write them.</p>
+                <div class="view-more">
+                    <a href="blog.html" class="view-more-btn">View Blog Page →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photos Section -->
+    <section id="photos" class="photos">
+        <div class="container">
+            <h2 class="photos-header">Need a little detour from the tech talk ?<br>Take a look at some of snapshots I've captured ;)</h2>
+            <div class="slideshow-container">
+                <div class="slide fade">
+                    <img src="Landing Page pics/IMG-20250526-WA0105.jpg" alt="Portfolio Image 1">
+                </div>
+                <div class="slide fade">
+                    <img src="Landing Page pics/IMG-20250824-WA0020.jpg" alt="Portfolio Image 2">
+                </div>
+                <div class="slide fade">
+                    <img src="Landing Page pics/IMG-20250824-WA0024.jpg" alt="Portfolio Image 3">
+                </div>
+                <div class="slide fade">
+                    <img src="Landing Page pics/IMG-20250824-WA0025.jpg" alt="Portfolio Image 4">
+                </div>0
+                <div class="slide fade">
+                    <img src="Landing Page pics/IMG-20250824-WA0026.jpg" alt="Portfolio Image 5">
+                </div>
+                <div class="slide fade">
+                    <img src="Landing Page pics\Z_aZ0tTe31glzcEEKSx5RBlVW5KrpotybFC6mUGFj7g=_plaintext_638868950171428897.jpg" alt="Portfolio Image 6">
+                </div>
+                <div class="slide fade">
+                    <img src="Landing Page pics/WhatsApp Image 2025-08-24 at 16.42.31_7f132a6c.jpg" alt="Portfolio Image 7">
+                </div>
+                
+                <!-- Navigation dots -->
+                <div class="dots-container">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                    <span class="dot" onclick="currentSlide(7)"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hello, I am Atharva Savalapurkar, a third year engineering student at VESIT Mumbai. Recently being interested a ton in the field of AI & ML & JAVA development, I've started to get hands on a lot of tools and programming languages in these domains.</p>
+                    <p>Created this website to elaborate a lot more efficiently about the courses and the projects I'm working on, imagining this would be like playing a Mario game using a wii controller.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <img src="contactInfoImages/gmailLogo.png" alt="Gmail" class="contact-logo">
+                            <span>Email: <a href="mailto:atharva.savalapurkar@gmail.com" class="contact-link">atharva.savalapurkar@gmail.com</a></span>
+                        </div>
+                        <div class="contact-item">
+                            <img src="contactInfoImages/linkedInlogo.png" alt="LinkedIn" class="contact-logo">
+                            <span>LinkedIn: <a href="https://www.linkedin.com/in/atharva-savalapurkar-866373317/" target="_blank" class="contact-link">@atharva-savalapurkar</a></span>
+                        </div>
+                        <div class="contact-item">
+                            <img src="contactInfoImages/Githublogo.png" alt="GitHub" class="contact-logo">
+                            <span>GitHub: <a href="https://github.com/AtharvaSavalapurkarVesit" target="_blank" class="contact-link">@AtharvaSavalapurkarVesit</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html> 
