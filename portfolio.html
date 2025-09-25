@@ -96,10 +96,43 @@
                             <span class="in-progress">In Progress</span>
                         </div>
                     </div>
+                    <div class="portfolio-item course-card"
+                         data-title="Python Course For Begineers"
+                         data-image="course certificates/PythonForAbsoulteBeginners_certificate.jpg"
+                         data-status="Completed"
+                         data-url="https://www.udemy.com/course/python-for-absolute-beginners-u/learn/lecture/24051794#overview"
+                         data-description="I have completed a foundational course in Python that introduced me to the basics of the language, including its array-like data structures such as lists, tuples, and dictionaries. Through this course, I gained hands-on experience with Python syntax, control flow, and simple data manipulation techniques. It provided a very rough but useful understanding of how Python stores and accesses data internally.">
+                        <div class="course-image">
+                            <img src="course certificates/PythonForAbsoulteBeginners_certificate.jpg" alt="Python Course For Begineers" class="course-img">
+                        </div>
+                        <div class="portfolio-placeholder">
+                            <h3>Python Course For Begineers</h3>
+                            <p>Foundational Python course covering syntax and core data structures</p>
+                            <span class="completed">Completed</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Course Modal -->
+    <div id="course-modal" class="modal" aria-hidden="true">
+        <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <button class="modal-close" aria-label="Close">×</button>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modal-image" src="" alt="Course Image">
+                </div>
+                <div class="modal-text">
+                    <h3 id="modal-title"></h3>
+                    <p id="modal-description"></p>
+                    <a id="modal-link" href="data-url" target="_blank" rel="noopener" class="view-more-btn">View Course</a>
+                </div>
+            </div>
+        </div>
+        <div class="modal-backdrop"></div>
+    </div>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">

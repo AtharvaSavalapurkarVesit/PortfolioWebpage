@@ -200,6 +200,9 @@ document.addEventListener('DOMContentLoaded', () => {
         item.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
         observer.observe(item);
     });
+
+    // Course modal wiring
+    setupCourseModal();
 });
 
 // Navbar scroll effect
@@ -272,6 +275,61 @@ function updateThemeIcon(theme, themeIcon) {
             themeIcon.textContent = '🌙';
         }
     }
+}
+
+// Course modal logic
+function setupCourseModal() {
+    const modal = document.getElementById('course-modal');
+    const modalImage = document.getElementById('modal-image');
+    const modalTitle = document.getElementById('modal-title');
+    const modalDescription = document.getElementById('modal-description');
+    const modalLink = document.getElementById('modal-link');
+    const closeBtn = modal?.querySelector('.modal-close');
+    const backdrop = modal?.querySelector('.modal-backdrop');
+
+    if (!modal) return;
+
+    function openModal({ title, image, description, url }) {
+        modalTitle.textContent = title || '';
+        modalImage.src = image || '';
+        modalImage.alt = title || 'Course Image';
+        modalDescription.textContent = description || '';
+        if (url) {
+            modalLink.href = url;
+            modalLink.style.display = 'inline-block';
+        } else {
+            modalLink.removeAttribute('href');
+            modalLink.style.display = 'none';
+        }
+        modal.classList.add('open');
+        modal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+        modal.classList.remove('open');
+        modal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+    }
+
+    closeBtn?.addEventListener('click', closeModal);
+    backdrop?.addEventListener('click', closeModal);
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.classList.contains('open')) {
+            closeModal();
+        }
+    });
+
+    document.querySelectorAll('.course-card').forEach(card => {
+        card.addEventListener('click', () => {
+            openModal({
+                title: card.getAttribute('data-title'),
+                image: card.getAttribute('data-image'),
+                description: card.getAttribute('data-description'),
+                url: card.getAttribute('data-url')
+            });
+        });
+    });
 }
 
 // Add loading animation
